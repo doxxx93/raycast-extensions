@@ -25,7 +25,15 @@ export function loadPresets(): Preset[] {
 }
 
 export function savePresets(presets: Preset[]): void {
-  fs.writeFileSync(PRESETS_PATH, JSON.stringify(presets, null, 2));
+  try {
+    const dir = path.dirname(PRESETS_PATH);
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+    }
+    fs.writeFileSync(PRESETS_PATH, JSON.stringify(presets, null, 2));
+  } catch {
+    // Silently fail if unable to write presets
+  }
 }
 
 export function getAllPresets(): Preset[] {
@@ -43,7 +51,7 @@ export function createPreset(preset: Omit<Preset, "id">): Preset {
   return newPreset;
 }
 
-// 현재 설정을 기반으로 프리셋 생성
+// Create preset from current settings
 export function createPresetFromCurrent(
   name: string,
   description: string,

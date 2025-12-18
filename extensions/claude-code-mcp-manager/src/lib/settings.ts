@@ -14,7 +14,15 @@ export function loadSettings(): Record<string, unknown> {
 }
 
 export function saveSettings(settings: Record<string, unknown>): void {
-  fs.writeFileSync(SETTINGS_PATH, JSON.stringify(settings, null, 2));
+  try {
+    const dir = path.dirname(SETTINGS_PATH);
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+    }
+    fs.writeFileSync(SETTINGS_PATH, JSON.stringify(settings, null, 2));
+  } catch {
+    // Silently fail if unable to write settings
+  }
 }
 
 export function getEnabledPlugins(): Record<string, boolean> {
@@ -36,7 +44,7 @@ export function togglePlugin(fullKey: string): boolean {
   return newState;
 }
 
-// 동적으로 settings.json에서 플러그인 목록 가져오기
+// Get available plugins dynamically from settings.json
 export function getAvailablePlugins(): string[] {
   const plugins = getEnabledPlugins();
   return Object.keys(plugins);

@@ -1,6 +1,6 @@
 # Claude Code MCP Manager Changelog
 
-## [Initial Version] - 2024-12-18
+## [Initial Version] - {PR_MERGE_DATE}
 
 ### Added
 

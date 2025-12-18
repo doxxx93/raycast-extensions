@@ -20,16 +20,16 @@ import {
 import CreatePresetForm from "./components/CreatePresetForm";
 import EditPresetForm from "./components/EditPresetForm";
 
-// 프리셋이 현재 상태와 일치하는지 확인
+// Check if preset matches current state
 function isCurrentState(preset: Preset): boolean {
   const current = getEnabledPlugins();
   const presetKeys = Object.keys(preset.plugins);
   const currentKeys = Object.keys(current);
 
-  // 키가 다르면 false
+  // Return false if keys don't match
   if (presetKeys.length !== currentKeys.length) return false;
 
-  // 모든 값이 일치하는지 확인
+  // Check if all values match
   return presetKeys.every((key) => preset.plugins[key] === current[key]);
 }
 
@@ -81,7 +81,7 @@ export default function Command() {
 
   const handleApplyPreset = async (preset: Preset) => {
     setEnabledPlugins(preset.plugins);
-    refresh(); // 상태 새로고침해서 Current 표시 업데이트
+    refresh(); // Refresh state to update Current indicator
     const enabledCount = Object.values(preset.plugins).filter(Boolean).length;
     await showToast({
       style: Toast.Style.Success,
