@@ -6,13 +6,26 @@ A Raycast extension to manage Claude Code MCP (Model Context Protocol) plugins.
 
 - **Toggle MCP**: Enable/disable individual MCP plugins
 - **MCP Presets**: Create, edit, delete, and apply custom presets
+- **Current State Indicator**: See which preset matches your current configuration
+
+## Screenshots
+
+![Command List](assets/command-list.png)
+
+![Toggle MCP](assets/toggle.png)
+
+![Preset List](assets/preset-list.png)
+
+![Preset Actions](assets/preset-actions.png)
+
+![Create/Edit Preset](assets/preset-new-edit.png)
 
 ## Commands
 
-| Command | Description | Shortcut |
-|---------|-------------|----------|
-| Toggle MCP | Toggle individual MCP plugins on/off | - |
-| MCP Presets | Manage and apply MCP presets | - |
+| Command | Description |
+|---------|-------------|
+| Toggle MCP | Toggle individual MCP plugins on/off |
+| MCP Presets | Manage and apply MCP presets |
 
 ### Preset Actions
 
@@ -22,23 +35,6 @@ A Raycast extension to manage Claude Code MCP (Model Context Protocol) plugins.
 | Create Preset | `⌘ + N` |
 | Edit Preset | `⌘ + E` |
 | Delete Preset | `⌘ + ⌫` |
-
-## Built-in Presets
-
-- **Minimal**: Only commit-commands & feature-dev
-- **Coding**: commit-commands, feature-dev, serena
-- **All On**: Enable all MCP plugins
-- **All Off**: Disable all MCP plugins
-
-## Supported MCP Plugins
-
-- `atlassian` - Jira & Confluence integration
-- `commit-commands` - Git commit utilities
-- `context7` - Context management
-- `feature-dev` - Feature development workflows
-- `greptile` - PR reviews & code analysis
-- `playwright` - Browser automation
-- `serena` - Code symbol analysis & editing
 
 ## File Locations
 
@@ -50,7 +46,7 @@ A Raycast extension to manage Claude Code MCP (Model Context Protocol) plugins.
 ### From Source
 
 ```bash
-git clone https://github.com/doxxx93/claude-code-mcp-manager.git
+git clone https://github.com/doxxx-playground/claude-code-mcp-manager.git
 cd claude-code-mcp-manager
 npm install
 npm run dev
