@@ -10,13 +10,13 @@ A Raycast extension to manage Claude Code MCP (Model Context Protocol) plugins.
 
 ## Screenshots
 
-![Toggle MCP](metadata/toggle.png)
+![Toggle MCP](https://raw.githubusercontent.com/doxxx93/raycast-extensions/ext/claude-code-mcp-manager/extensions/claude-code-mcp-manager/metadata/toggle.png)
 
-![Preset List](metadata/preset-list.png)
+![Preset List](https://raw.githubusercontent.com/doxxx93/raycast-extensions/ext/claude-code-mcp-manager/extensions/claude-code-mcp-manager/metadata/preset-list.png)
 
-![Preset Actions](metadata/preset-actions.png)
+![Preset Actions](https://raw.githubusercontent.com/doxxx93/raycast-extensions/ext/claude-code-mcp-manager/extensions/claude-code-mcp-manager/metadata/preset-actions.png)
 
-![Create/Edit Preset](metadata/preset-new-edit.png)
+![Create/Edit Preset](https://raw.githubusercontent.com/doxxx93/raycast-extensions/ext/claude-code-mcp-manager/extensions/claude-code-mcp-manager/metadata/preset-new-edit.png)
 
 ## Commands
 
