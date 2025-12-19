@@ -10,15 +10,13 @@ A Raycast extension to manage Claude Code MCP (Model Context Protocol) plugins.
 
 ## Screenshots
 
-![Command List](assets/command-list.png)
+![Toggle MCP](metadata/toggle.png)
 
-![Toggle MCP](assets/toggle.png)
+![Preset List](metadata/preset-list.png)
 
-![Preset List](assets/preset-list.png)
+![Preset Actions](metadata/preset-actions.png)
 
-![Preset Actions](assets/preset-actions.png)
-
-![Create/Edit Preset](assets/preset-new-edit.png)
+![Create/Edit Preset](metadata/preset-new-edit.png)
 
 ## Commands
 
