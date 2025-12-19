@@ -41,14 +41,7 @@ A Raycast extension to manage Claude Code MCP (Model Context Protocol) plugins.
 
 ## Installation
 
-### From Source
-
-```bash
-git clone https://github.com/doxxx-playground/claude-code-mcp-manager.git
-cd claude-code-mcp-manager
-npm install
-npm run dev
-```
+Install from [Raycast Store](https://raycast.com/doxxx93/claude-code-mcp-manager).
 
 ## Why?
 
